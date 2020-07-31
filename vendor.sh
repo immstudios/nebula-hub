@@ -122,7 +122,9 @@ VENDOR_DIR=dist/static/js/vendor
 rm $VENDOR_DIR/*
 
 cp vendor/bootstrap-4.5.0/dist/js/bootstrap.bundle.min.js $VENDOR_DIR/
+cp vendor/bootstrap-4.5.0/dist/js/bootstrap.bundle.min.js.map $VENDOR_DIR/
 cp vendor/bootstrap-select-1.13.18/dist/js/bootstrap-select.min.js $VENDOR_DIR/
+cp vendor/bootstrap-select-1.13.18/dist/js/bootstrap-select.min.js.map $VENDOR_DIR/
 cp vendor/gijgo-1.9.13/dist/modular/js/core.min.js $VENDOR_DIR/gijgo-core.js
 cp vendor/gijgo-1.9.13/dist/modular/js/datepicker.min.js $VENDOR_DIR/gijgo-datepicker.js
 cp vendor/Inputmask-5.0.3/dist/jquery.inputmask.min.js $VENDOR_DIR/
