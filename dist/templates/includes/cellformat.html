@@ -54,6 +54,12 @@
         <span class="label text-success"><i class="fas fa-flag"></i></span>
     {% endif %}
 
+{% elif key == "duration" %}
+    {{ asset.duration | s2time }}
+    {% if asset["mark_in"] or asset["mark_out"]  %}
+    *
+    {% endif %}
+
 {% else %}
     {{ asset.show(key) }}
 {% endif %}
