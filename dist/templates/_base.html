@@ -32,9 +32,22 @@
 
         {% if user.id %}
             <nav>
-            {% include "includes/sitenav.html" %}
+                <div id="site-nav">
+                    <a class="navbar-brand" href="/">
+                        <img src="/static/img/logo-wide.svg">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-nav-collapse">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="site-nav-collapse">
+                        {% include "includes/sitenav.html" %}
+                    </div>
+                </div>
             {% if self.pagenav() %}
                 <div id="page-nav">
+                    {% block pagehead %}{% endblock %}
                     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#page-nav-collapse">
                         <span></span>
                         <span></span>
